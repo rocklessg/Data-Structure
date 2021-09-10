@@ -38,7 +38,7 @@ namespace LinkedList
                 Console.WriteLine("List is empty");
                 return;
             }
-            Console.WriteLine("List is :   ");
+            Console.Write("List is :   ");
 
             head = Head;
             while (head != null)
@@ -182,6 +182,90 @@ namespace LinkedList
                 InsertNodeToTail(value);
             }
 
+        }
+
+        public void InsertAfter(int value, int node)
+        {
+            Node head = Head;
+            while (head != null)
+            {
+                if (head.Value == node)
+                    break;
+                head = head.Next;
+            }
+
+            if (head == null)
+                Console.WriteLine(node + " not present in the list");
+            else
+            {
+                Node temp = new Node(value);
+                temp.Next = head.Next;
+                head.Next = temp;
+            }
+
+        }
+
+        public void InsertBefore(int value, int node)
+        {
+            Node temp;
+            if (Head == null)
+            {
+                Console.WriteLine("List is empty");
+                return;
+            }
+
+            // node is first node, new node is to be inserted before the first node
+            if (node == Head.Value)
+            {
+                temp = new Node(value);
+                temp.Next = Head;
+                Head = temp;
+                return;
+            }
+
+            //Find reference to predecesor of node parameter
+            Node head = Head;
+            while (head.Next != null)
+            {
+                if (head.Next.Value == node)
+                    break;
+                head = head.Next;
+            }
+
+            if (head.Next == null)
+                Console.WriteLine(node + " not present in the list");
+            else
+            {
+                temp = new Node(value);
+                temp.Next = head.Next;
+                head.Next = temp;
+            }
+        }
+
+        public void InsertAtGivenPosition(int value, int position)
+        {
+            Node temp;
+            int i;
+            if (position == 1)
+            {
+                temp = new Node(value);
+                temp.Next = Head;
+                Head = temp;
+                return;
+            }
+
+            Node head = Head;
+            for (i = 1; i < position - 1 && head != null; i++) // fine reference to position - 1 node
+                head = head.Next;
+
+            if (head == null)
+                Console.WriteLine("You can insert upto " + i + "th positon");
+            else
+            {
+                temp = new Node(value);
+                temp.Next = head.Next;
+                head.Next = temp;
+            }            
         }
     }
 }

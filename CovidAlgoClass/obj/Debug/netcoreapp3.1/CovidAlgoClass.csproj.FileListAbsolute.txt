@@ -1,0 +1,17 @@
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\bin\Debug\netcoreapp3.1\CovidAlgoClass.exe
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\bin\Debug\netcoreapp3.1\CovidAlgoClass.deps.json
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\bin\Debug\netcoreapp3.1\CovidAlgoClass.runtimeconfig.json
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\bin\Debug\netcoreapp3.1\CovidAlgoClass.runtimeconfig.dev.json
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\bin\Debug\netcoreapp3.1\CovidAlgoClass.dll
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\bin\Debug\netcoreapp3.1\CovidAlgoClass.pdb
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\bin\Debug\netcoreapp3.1\LinkedList.dll
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\bin\Debug\netcoreapp3.1\LinkedList.pdb
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\obj\Debug\netcoreapp3.1\CovidAlgoClass.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\obj\Debug\netcoreapp3.1\CovidAlgoClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\obj\Debug\netcoreapp3.1\CovidAlgoClass.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\obj\Debug\netcoreapp3.1\CovidAlgoClass.AssemblyInfo.cs
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\obj\Debug\netcoreapp3.1\CovidAlgoClass.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\obj\Debug\netcoreapp3.1\CovidAlgoClass.csproj.CopyComplete
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\obj\Debug\netcoreapp3.1\CovidAlgoClass.dll
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\obj\Debug\netcoreapp3.1\CovidAlgoClass.pdb
+C:\Users\hp\Desktop\CovidAlgoClass\CovidAlgoClass\obj\Debug\netcoreapp3.1\CovidAlgoClass.genruntimeconfig.cache

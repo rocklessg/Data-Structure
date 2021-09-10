@@ -23,7 +23,7 @@ namespace CovidAlgoClass
                 Console.WriteLine("5.Insert value to tail");
                 Console.WriteLine("6.Insert after a specific node");
                 Console.WriteLine("7.Insert before a specific node");
-                Console.WriteLine("8.Insert at a givien posistion");
+                Console.WriteLine("8.Insert at a given position");
                 Console.WriteLine("9.Delete first node");
                 Console.WriteLine("10.Delete last node");
                 Console.WriteLine("11.Delete any node");
@@ -45,27 +45,33 @@ namespace CovidAlgoClass
                 switch (choice)
                 {
                     case 1:
+                        Console.Clear();
                         list.DisplayList();
                         break;
                     case 2:
+                        Console.Clear();
                         list.CountNodes();
                         break;
                     case 3:
+                        Console.Clear();
                         Console.WriteLine("Enter value to be searched : ");
                         value = Convert.ToInt32(Console.ReadLine());
                         list.SearchingForNode(value);
                         break;
                     case 4:
+                        Console.Clear();
                         Console.WriteLine("Enter value to be inserted: ");
                         value = Convert.ToInt32(Console.ReadLine());
                         list.InsertNodeToHead(value);
                         break;
                     case 5:
+                        Console.Clear();
                         Console.WriteLine("Enter value to be inserted: ");
                         value = Convert.ToInt32(Console.ReadLine());
                         list.InsertNodeToTail(value);
                         break;
                     case 6:
+                        Console.Clear();
                         Console.WriteLine("Enter value to be inserted : ");
                         value = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Enter value after which to insert: ");
