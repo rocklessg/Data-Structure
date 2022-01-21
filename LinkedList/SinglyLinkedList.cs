@@ -25,7 +25,7 @@ namespace LinkedList
             Node head = Head;
             while (head != null)
             {
-                Console.WriteLine(head.Value  + " ");
+                Console.WriteLine(head.Value + " ");
                 head = head.Next;
             }
         }
@@ -138,7 +138,7 @@ namespace LinkedList
         {
             Node temp = new Node(value);
             temp.Next = Head;
-            Head = temp;  
+            Head = temp;
         }
         public void InsertNodeInEmptyList(int value)
         {
@@ -163,7 +163,7 @@ namespace LinkedList
             head = Head;
             while (head.Next != null)
                 head = head.Next;
-            head.Next = temp;    
+            head.Next = temp;
         }
 
         public void CreateList()
@@ -202,9 +202,7 @@ namespace LinkedList
                 temp.Next = head.Next;
                 head.Next = temp;
             }
-
         }
-
         public void InsertBefore(int value, int node)
         {
             Node temp;
@@ -265,7 +263,160 @@ namespace LinkedList
                 temp = new Node(value);
                 temp.Next = head.Next;
                 head.Next = temp;
-            }            
+            }
         }
+
+        public void DeleteFirstNode()
+        {
+            if (Head == null)
+                return;
+            _ = Head == Head.Next;
+        }
+
+        public void DeleteLastNode()
+        {
+            if (Head == null)
+                return;
+            if (Head.Next == null)
+            {
+                Head = null;
+                return;
+            }
+            Node head = Head;
+            while (head.Next.Next != null)
+                head = head.Next;
+            head.Next = null;
+        }
+
+        public void DeleteNode(int node)
+        {
+            if (Head == null)
+            {
+                Console.WriteLine("List is empty\n");
+                return;
+            }
+
+            //Deletion of first node
+            if (Head.Value == node)
+            {
+                Head = Head.Next;
+                return;
+            }
+
+            //Deletion inbetween or at the end
+            Node head = Head;
+            while (head.Next != null)
+            {
+                if (head.Next.Value == node)
+                    break;
+                head = head.Next;
+            }
+
+            if (head.Next == null)
+                Console.WriteLine($"node {node} is not in the list");
+            else
+                head.Next = head.Next.Next;
+        }
+
+        public void ReverseList()
+        {
+            Node previous, head, next;
+            previous = null;
+            head = Head;
+            while (head != null)
+            {
+                next = head.Next;
+                head.Next = previous;
+                previous = head;
+                head = next;
+            }
+            Head = previous;
+        }
+
+        public void BubbleSortByExchangingValue()
+        {
+            Node end, firstNode, secondNode;
+
+            for (end = null; end != Head.Next; end = firstNode)
+            {
+                for (firstNode = Head; firstNode.Next != end; firstNode = firstNode.Next)
+                {
+                    secondNode = firstNode.Next;
+                    if (firstNode.Value > secondNode.Value)
+                    {
+                        int temp = firstNode.Value;
+                        firstNode.Value = secondNode.Value;
+                        secondNode.Value = temp;   
+                    }
+                }
+            }
+        }
+        public void BubbleSortByExchangingLinks()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void MergeSort()
+        {
+            throw new NotImplementedException();
+        }
+        public void InsertCycle(int value)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            
